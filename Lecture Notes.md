@@ -1,8 +1,10 @@
 # CSE142
 
-I just use VSCode for writing codes with help of Cursor. It is not quite traditional but it is quite fun.
+I just use VSCode for writing codes with help of GitHub Copilot. It is not quite traditional but it is quite fun.
 
-## Lecture 1
+## Chapter I
+
+### Lecture 1
 
 Try to view it as a new kind of language and learn the *thinking process* of using a new kind of language.
 
@@ -21,10 +23,19 @@ public class Hello {
 
 **escape sequence**: \ A two character sequence to represent a single character.
 
-## Lecture 2
+### Lecture 2
 
 The sense of **subtask**: Do not put all your code in the main method, instead, using more submethod to represent different parts.
 
-You can define your own static methods like `public static void [name]([parameters])
+You can define your own static methods like `public static void [name]([parameters])`.
 
-**method** begins with lower case letter, you should name it in that way: `thisIsAReallyLongMethodInJava`
+**method** begins with lower case letter, you should name it in that way: `thisIsAReallyLongMethodInJava`.
+
+## Chapter II
+
+- Data
+- Numeric data
+
+### Lecture 3
+
+An idea between *discrete* and *continuous*.
