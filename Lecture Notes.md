@@ -2,9 +2,9 @@
 
 I just use VSCode for writing codes with help of GitHub Copilot. It is not quite traditional but it is quite fun.
 
-## Chapter I
+---
 
-### Lecture 1
+## Lecture 1
 
 Try to view it as a new kind of language and learn the *thinking process* of using a new kind of language.
 
@@ -23,7 +23,7 @@ public class Hello {
 
 **escape sequence**: \ A two character sequence to represent a single character.
 
-### Lecture 2
+## Lecture 2
 
 The sense of **subtask**: Do not put all your code in the main method, instead, using more submethod to represent different parts.
 
@@ -31,11 +31,24 @@ You can define your own static methods like `public static void [name]([paramete
 
 **method** begins with lower case letter, you should name it in that way: `thisIsAReallyLongMethodInJava`.
 
-## Chapter II
+---
 
-- Data
-- Numeric data
-
-### Lecture 3
+## Lecture 3
 
 An idea between *discrete* and *continuous*.
+
+## Lecture 4
+
+Take consideration of one important thing: the essence difference between odd and even is related to the number we get while being modded.
+
+In this case, carefully thinking about the usage of mod and other ways of calculating.
+
+### For Loop
+
+> *C* did For Loops this way so did *C++* and so *Java* decided to copy. 
+
+```java
+for (init; test; update) {
+    body
+}
+```

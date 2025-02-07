@@ -7,4 +7,4 @@ I do hope one day, it can remind me of my **original intention** of learning com
 
 By Donald Knuth, Selected Papers on Computer Science
 
-My Lecture Notes: [Lecture Notes.md](Lecture Notes.md)
+My Lecture Notes: [Lecture Notes](Lecture Notes.md)
