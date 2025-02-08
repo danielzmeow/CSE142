@@ -15,5 +15,9 @@ public class Compare {
         } else {
             System.out.println("These contents are not same.");
         }
+
+        // Close the scanner
+        content1.close();
+        content2.close();
     }
 }

@@ -31,8 +31,6 @@ You can define your own static methods like `public static void [name]([paramete
 
 **method** begins with lower case letter, you should name it in that way: `thisIsAReallyLongMethodInJava`.
 
----
-
 ## Lecture 3
 
 An idea between *discrete* and *continuous*.
@@ -52,3 +50,9 @@ for (init; test; update) {
     body
 }
 ```
+
+## Lecture 5
+
+The ability to disassemble tasks is important, we begin with fixed situation, then we explore further to more common situation.
+
+The usage of `final`: It is something in **class** layer, instead of inside any method. For each element used as final, it will become an **immutable** element.
