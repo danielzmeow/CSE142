@@ -27,7 +27,7 @@ public class Hello {
 
 ## Lecture 2
 
-The sense of **subtask**: Do not put all your code in the main method, instead, using more submethod to represent different parts.
+The sense of **subtask**: Do not put all your code in the main method, instead, using more sub-method to represent different parts.
 
 You can define your own static methods like `public static void [name]([parameters])`.
 
@@ -58,3 +58,22 @@ for (init; test; update) {
 The ability to disassemble tasks is important, we begin with fixed situation, then we explore further to more common situation.
 
 The usage of `final`: It is something in **class** layer, instead of inside any method. For each element used as final, it will become an **immutable** element.
+
+## Lecture 6
+
+Try merge repeated used codes.
+
+**Variable scope**: the part of program where variable exists. For example,
+
+```java
+public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+```
+**Local variable**: the variable only available inside the scope.
+
+**Global variable**: we do have it. Try **DON'T** use it til now.
+
+Focus on individual components.
+
+The **parameter** is designed to let information to **flow into** method.
