@@ -77,3 +77,23 @@ public static void main(String[] args) {
 Focus on individual components.
 
 The **parameter** is designed to let information to **flow into** method.
+
+## Lecture 7
+
+Java is not only designed for procedural programming. Java is an object-oriented language. **Practice** of objects usage is important.
+
+**Primitive types** begin with lowercase letters.
+
+**Object types** are defined by class, which begin with capital letter.
+
+Codes to add new object are shown below
+
+```java
+Scanner input1 = new Scanner(System.in)
+[Class] [Variable] = [Keyword] [Class(Argument)]
+```
+The `[Class]` define the type of `[Variable]`
+
+Variable stores a reference to the object.
+
+Object-oriented means you need to *talk with* object, for example: `panel.getGraphics().drawRect()` needs `.getGraphics()` because only **graphics** can draw something.
