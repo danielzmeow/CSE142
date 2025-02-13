@@ -1,8 +1,13 @@
 {
     "cSpell.words": [
+        "animateonsleep",
+        "buildingjavaprograms",
+        "cleanup",
+        "drawingpanel",
         "println",
         "Reges",
-        "Stepp"
+        "Stepp",
+        "testrunner"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }

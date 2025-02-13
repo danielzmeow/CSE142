@@ -868,8 +868,7 @@ public final class DrawingPanel implements ImageObserver {
             // user chose a file; let's diff it
             new DiffImage(chooser.getSelectedFile().toString(), tempFile);
         } catch (IOException ioe) {
-            JOptionPane.showMessageDialog(frame,
-                                          "Unable to compare images: \n" + ioe);
+            JOptionPane.showMessageDialog(frame, "Unable to compare images: \n" + ioe);
         }
     }
     

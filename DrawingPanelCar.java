@@ -1,7 +1,7 @@
 import java.awt.*;
 import DrawingPanel.java;
 
-public class DrawingPanelExample {
+public class DrawingPanelCar {
     public static void main(String[] args) {
         DrawingPanel panel = new DrawingPanel(500, 200);
 
@@ -12,22 +12,24 @@ public class DrawingPanelExample {
         panel.setBackground(Color.LIGHT_GRAY);
 
         //Add int x, int y
-        drawCar(g, 10, 30);
-
-        
+        for (int i = 0; i < 300; i++) {
+            panel.clear();
+            drawCar(g, 10 + i, 30, 100);
+            panel.sleep(30 );
+        }
     }
 
-    private static void drawCar(Graphics g, int x, int y) {
-        g.fillRect(x, y, 100, 50);
+    private static void drawCar(Graphics g, int x, int y, int width) {
+        g.setColor(Color.BLACK);
+        g.fillRect(x, y, width, width/2);
 
         //Change color to cyan
         g.setColor(Color.CYAN);
-        g.fillRect(x+70, y+10, 30, 20);
+        g.fillRect(x+7*width/10, y+width/10, 3*width/10, width/5);
 
         //Change color to red
         g.setColor(Color.RED);
-        int wheelX = 20;
-        g.fillOval(x+10, y+40, 20, 20);
-        g.fillOval(x+70, y+40, 20, 20);
+        g.fillOval(x+width/10, y+4*width/10, width/5, width/5);
+        g.fillOval(x+7*width/10, y+4*width/10, width/5, width/5);
     }
 }

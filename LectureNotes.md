@@ -23,7 +23,7 @@ public class Hello {
 
 **class** should be a word with capital letter, we'll get to the point of `public static void main(String[] args)` in Chapter VII.
 
-**escape sequence**: \ A two character sequence to represent a single character.
+**escape sequence**: `\` A two character sequence to represent a single character.
 
 ## Lecture 2
 
@@ -86,14 +86,20 @@ Java is not only designed for procedural programming. Java is an object-oriented
 
 **Object types** are defined by class, which begin with capital letter.
 
-Codes to add new object are shown below
+Codes to add new object are shown below:
 
 ```java
 Scanner input1 = new Scanner(System.in)
 [Class] [Variable] = [Keyword] [Class(Argument)]
 ```
-The `[Class]` define the type of `[Variable]`
+The `[Class]` define the type of `[Variable]`.
 
 Variable stores a reference to the object.
 
 Object-oriented means you need to *talk with* object, for example: `panel.getGraphics().drawRect()` needs `.getGraphics()` because only **graphics** can draw something.
+
+## Lecture 8
+
+Keep `main` concise when you can. It should some kind of fuse to **boom** the whole programmes.
+
+This lecture basically repeats about parameters and do this again and again.
