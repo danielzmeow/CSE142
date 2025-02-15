@@ -103,3 +103,45 @@ Object-oriented means you need to *talk with* object, for example: `panel.getGra
 Keep `main` concise when you can. It should some kind of fuse to **boom** the whole programmes.
 
 This lecture basically repeats about parameters and do this again and again.
+
+## Lecture 9
+
+`Math` Class is the standard way for you in Java to calculate math related things.
+
+When a method do something to a value, it is possible for the method to return a value but you do nothing with it. So you need variable to tore it.
+
+> Don’t be afraid of too much variables.
+
+For `public static void ...`, the `void` is return value. Java cares about the type of the objects.
+
+According to another old convention, in modern language, most of the initial time is setted to 1970/1/1.
+
+We are about to introduce a way to get current time:
+
+```java
+int millis = System.currentTimeMillis();
+```
+
+Be careful that the value it returns is the difference between 1970/1/1 and current time in milliseconds. The returning value is based on `long`, which can store more more date.
+
+> `int` is a 32-bit integer data type that can store numbers from -2³¹ to 2³¹-1, while `long` is a 64-bit integer data type that can store much larger numbers from -2⁶³ to 2⁶³-1
+
+Plus, it like a joke but it do show the integer overflow in the method `.nanoTime`.
+
+> Differences in successive calls that span greater than approximately 292 years (263 nanoseconds) will not correctly compute elapsed time due to numerical overflow.f
+
+**Understand information FLOW over different method is important.** For example,
+
+```java
+public static double convertToDays(double millis) {
+    double answers = (millis / 1000 / 60 / 60 / 24);
+    return answers;
+}
+```
+For the `double millis`, it is the value it requires to pass in. And for the `double answers`, it is the value it returns.
+
+There is a simple way to convert double to `int`
+
+```java
+double weeks = (int) (days / 7);
+```
