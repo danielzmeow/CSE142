@@ -125,7 +125,7 @@ int millis = System.currentTimeMillis();
 Be careful that the value it returns is the difference between 1970/1/1 and current time in milliseconds. The returning value is based on `long`, which can store more more date.
 
 > `int` is a 32-bit integer data type that can store numbers from -2³¹ to 2³¹-1, while `long` is a 64-bit integer data type that can store much larger numbers from -2⁶³ to 2⁶³-1
-
+ 
 Plus, it like a joke but it do show the integer overflow in the method `.nanoTime`.
 
 > Differences in successive calls that span greater than approximately 292 years (263 nanoseconds) will not correctly compute elapsed time due to numerical overflow.f
@@ -145,3 +145,17 @@ There is a simple way to convert double to `int`
 ```java
 double weeks = (int) (days / 7);
 ```
+
+## Lecture 10
+
+ We are about to introduce `Scanner` class. 
+
+ ```java
+ //import Java utilities
+ import java.util.*;
+ ...
+ Scanner console = new Scanner(System.in);
+ console.nextInt();
+```
+
+Be careful that in any situation, the type of input must be consist with 
