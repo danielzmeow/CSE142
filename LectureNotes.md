@@ -158,4 +158,22 @@ double weeks = (int) (days / 7);
  console.nextInt();
 ```
 
-Be careful that in any situation, the type of input must be consist with 
+Be careful that in any situation, the type of input must be consist with the type of output.
+
+## Lecture 11
+
+If you want to get a value out of `method`, you need to use `return` keyword. Be careful that private variable cannot be used globally. 
+
+We actually use `if-else` to prevent some `if` have been executed for more than once. A great example for using `if-else` is shown below.
+
+```java
+if (test1) {
+    statement(1);
+} else if (test2) {
+    statement(2);
+} else (test3) {
+    statement(3);
+}
+```
+
+It must be reminded that `if-if`, `if-else if` and `if-else` are quite **different**. What to choose depends on how many branches you want to execute
