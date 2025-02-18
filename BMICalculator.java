@@ -1,21 +1,24 @@
 import java.util.*;
 
 public class BMICalculator {
+    private static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner weight = new Scanner(System.in);
-        System.out.println("Enter your weight in kg: ");
-        double weightInKg = weight.nextDouble();
+        System.out.println("Enter your name: ");
+        String userName = scanner.nextLine();
+        int BMI1 = basicBMI();
 
-        Scanner height = new Scanner(System.in);
-        System.out.println("Enter your height in meters: ");
-        double heightInMeters = height.nextDouble();
+        System.out.println("Enter your name: ");
+        String userName2 = scanner.nextLine();
+        int BMI2 = basicBMI();
 
-        weight.close();
-        height.close();
-
-        int BMI = calculateBMI(weightInKg, heightInMeters);
-        String status = getBMIStatus(BMI);
-        System.out.println(status);
+        if (BMI1 > BMI2) {
+            System.out.println(userName + " has a higher BMI of " + BMI1);
+        } else if (BMI2 > BMI1) {
+            System.out.println(userName2 + " has a higher BMI of " + BMI2);
+        } else {
+            System.out.println(userName + " and " + userName2 + " have the same BMI of " + BMI1);
+        }
     }
 
     public static int calculateBMI(double weightInKg, double heightInMeters) {
@@ -23,6 +26,21 @@ public class BMICalculator {
         return (int) BMI;
     }
 
+    public static int basicBMI(){
+        System.out.println("Enter your weight in kg: ");
+        double weightInKg = scanner.nextDouble();
+        scanner.nextLine(); // Consume the remaining newline
+
+        System.out.println("Enter your height in meters: ");
+        double heightInMeters = scanner.nextDouble();
+        scanner.nextLine(); // Consume the remaining newline
+
+        int BMI = calculateBMI(weightInKg, heightInMeters);
+        return BMI;
+
+    }
+
+    /*
     public static String getBMIStatus(int BMI) {
         if (BMI < 18.5) {
             return "Underweight";
@@ -34,4 +52,7 @@ public class BMICalculator {
             return "Obese";
         }
     }
+    */
+
+
 }
