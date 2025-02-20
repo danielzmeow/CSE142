@@ -240,3 +240,21 @@ For primitive type, it begins with lower case
 | toLowerCase()             | A **new** string with all lower case    |
 | toUpperCase()             | A **new** string with all upper case    |
 
+## Lecture 13
+
+### While Loop
+
+Repeatedly executes its body as long as a logical test is true.
+
+```java
+while (test) {
+    statement(s);
+}
+```
+
+> - While Loop: Used when you **don't know** how many iterations you need beforehand. It continues until a condition becomes false
+> - For Loop: Used when you know the number of iterations in advance, typically for iterating over a sequence or range
+
+### Fencepost Problem
+
+Narrowly, the Fencepost Problem (or Off-by-One Error) is a programming error that occurs when failing to account for the difference between the number of items versus the number of spaces between them. While widely it can be extended to more condition 
