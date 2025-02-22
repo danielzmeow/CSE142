@@ -20,6 +20,8 @@ public class Roulette {
 
             System.out.println("bet: " + bet + ", spin: " + spin + ", money: " + money);
         }
+
+        //It is not related to the while condition. As it jumps off the while loop, the game ends.
         System.out.println("Game over! Max money: " + max);
     }
 }

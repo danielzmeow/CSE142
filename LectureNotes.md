@@ -283,5 +283,12 @@ In each case, you first need to have a variable to store a class and then use a 
 Random rNumber = new Random();
 rNumber.nextInt(10);
 ```
+## Lecture 15
 
- 
+> Engineering study phyisc because they build artifacts in the physical world.
+
+### Legal Input
+
+It is very hard for you to expect the user always give you an **legal input**.
+
+We basically need to consider each part of the program carefully.
