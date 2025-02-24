@@ -292,3 +292,31 @@ rNumber.nextInt(10);
 It is very hard for you to expect the user always give you an **legal input**.
 
 We basically need to consider each part of the program carefully.
+
+## Lecture 16
+
+### Type `boolean`
+
+One of the primitive type in *Java*, which starts with lowercase letter.
+
+Or: `||`  Any of the condition is true.
+
+And: `&&` All the condition is true.
+
+### Other
+
+When `return` is run, the method will exit immediately.
+
+```java
+public static boolean lucky (Random rNumber) {
+    for (int i = 1; i <= 10; i++) {
+        int next = rNumber.nextInt(30);
+        System.out.print(next + " ");
+        if (next == 7) {
+            return true;
+        }
+    }
+    return false;
+} 
+```
+
