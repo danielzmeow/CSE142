@@ -372,3 +372,68 @@ Stream: source -> modifier -> terminator
 Lambda expression (`element -> System.out.print(element)`) is like saying, "When you get an element, go to this place and do this thing."
 
 Method reference (`System.out::print`) is like saying, "Here's the address of the place. Go there when you get an element."
+
+## Lecture 18
+
+An important one of intro computer science. 
+
+```java
+import java.io.*;
+File file = new File("numbers.txt");
+```
+
+### Path
+
+Absolute path: the route of the file system like: `/Users/danielzhang/developer`
+
+Relative path: path related to your **working directory**
+
+### Plumbing Model
+
+You can imagine things flow through pipes from one to another
+
+You can always view `scanner` as faucet, which is a way to connect source and terminal things.
+
+```java
+import java.io.*;
+File file = new File("numbers.txt");
+Scanner input = new scanner(file);
+input.nextDouble();
+```
+
+It is, however, important to check for the *file not found exception* condition. Use the structure below to solve it.
+
+```java
+try {
+    File numberFile = new File("numbers.one");
+    Scanner input = new Scanner(numberFile);
+    System.out.println(input.nextLine());
+    input.close();
+} catch (FileNotFoundException error) {
+    System.out.println("File not found: " + error.getMessage());
+}
+```
+
+### Round-Off Error
+
+1. Finite Precision: Computers store numbers using a fixed number of bits, which limits the precision.
+2. Floating-Point Representation: Most real numbers are represented in floating-point format (like IEEE 754), which has inherent limitations
+3. Binary Representation: Computers use binary, which means some decimal numbers cannot be represented exactly (e.g., 0.1 in decimal cannot be represented exactly in binary).
+
+### Testing of Valid Input
+
+| Method          | Description                                                                                |
+| --------------- | ------------------------------------------------------------------------------------------ |
+| hasNext()       | returns true if there are any more tokens of input to read (always **true** for **console** input) |
+| hasNextInt()    | returns true if there is a next token and it can be read as an int                         |
+| hasNextDouble() | returns true if there is a next token and it can be read as a double                       |
+
+### Logic Error with Calling `NextDouble()` Twice
+
+You must realise that if you do not store it into a variable, it will be called twice in such codes. (The `double number = input.nextDouble()` part)
+
+```java
+double number = input.nextDouble();
+System.out.println("Number: " + number);
+sum += number;
+```
