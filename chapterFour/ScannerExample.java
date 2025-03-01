@@ -7,5 +7,6 @@ public class ScannerExample {
         System.out.print("Enter a number: ");
         int number = console.nextInt();
         System.out.println(number);
+        console.close();
     }
 }

@@ -422,7 +422,7 @@ try {
 
 ### Testing of Valid Input
 
-A token based way of data processing.
+A token-based way of data processing.
 
 | Method          | Description                                                                                |
 | --------------- | ------------------------------------------------------------------------------------------ |
@@ -442,3 +442,4 @@ sum += number;
 
 ## Lecture 19
 
+We introduce a line-based data processing method: `.nextLine()`. Be careful to convert all the data into same capitalisation formats.

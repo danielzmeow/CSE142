@@ -9,5 +9,6 @@
         "Stepp",
         "testrunner"
     ],
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "files.autoSave": "afterDelay"
 }

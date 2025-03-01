@@ -5,7 +5,7 @@ import java.io.*;
 public class FileExample {
     public static void main(String[] args) {
         try {
-            File numberFile = new File("numbers.txt");
+            File numberFile = new File("chapterSix/numbers.txt");
             Scanner input = new Scanner(numberFile); 
 
             double sum = 0.0;
