@@ -1,3 +1,4 @@
+package chapterThree;
 import java.util.*;
 
 public class SayCheese {
@@ -11,5 +12,6 @@ public class SayCheese {
         } else {
             System.out.println("Nope!, you say: " + input);
         }
+        console.close();
     }
 }

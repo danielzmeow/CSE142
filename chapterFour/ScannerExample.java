@@ -1,3 +1,4 @@
+package chapterFour;
 import java.util.*;
 
 public class ScannerExample {

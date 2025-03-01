@@ -1,3 +1,4 @@
+package chapterFive;
 import java.util.*;
 
 public class GuessNumberGame {
@@ -16,6 +17,7 @@ public class GuessNumberGame {
             System.out.println("You guess is?");
             Scanner console = new Scanner(System.in);
             guess = console.nextInt();
+            console.close();
         }
 
         //As long as it jumps out of the loop, it means the guess is right. No test required.

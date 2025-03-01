@@ -1,3 +1,4 @@
+package chapterFour;
 // This program finds the body mass index (BMI) for two individuals.  This
 // variation includes several methods other than method main that provide
 // structure and eliminate redundancy.

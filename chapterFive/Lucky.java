@@ -1,3 +1,4 @@
+package chapterFive;
 import java.util.*;
 
 public class Lucky {
@@ -13,7 +14,7 @@ public class Lucky {
             int next = rNumber.nextInt(30);
             System.out.print(next + " ");
             if (next == 7) {
-            return true;
+                return true;
             }
         } 
         return false;

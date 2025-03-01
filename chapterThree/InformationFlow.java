@@ -1,3 +1,4 @@
+package chapterThree;
 public class InformationFlow {
     public static void main(String[] args) {
         drawLine(5);

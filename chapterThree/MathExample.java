@@ -1,3 +1,4 @@
+package chapterThree;
 public class MathExample {
     public static void main(String[] args) {
         long millis = System.currentTimeMillis();

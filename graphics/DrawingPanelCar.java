@@ -1,7 +1,9 @@
+package graphics;
 import java.awt.*;
-import DrawingPanel.java;
 
-public class DrawingPanelGeneral {
+import graphics.DrawingPanel.java;
+
+public class DrawingPanelCar {
     public static void main(String[] args) {
         DrawingPanel panel = new DrawingPanel(500, 200);
 
@@ -12,12 +14,15 @@ public class DrawingPanelGeneral {
         panel.setBackground(Color.LIGHT_GRAY);
 
         //Add int x, int y
-        drawCar(g, 10, 30, 50);
-
-        
+        for (int i = 0; i < 300; i++) {
+            panel.clear();
+            drawCar(g, 10 + i, 30, 100);
+            panel.sleep(30 );
+        }
     }
 
     private static void drawCar(Graphics g, int x, int y, int width) {
+        g.setColor(Color.BLACK);
         g.fillRect(x, y, width, width/2);
 
         //Change color to cyan

@@ -1,3 +1,4 @@
+package chapterOne;
 import java.util.Scanner;
 
 public class InputTypeChecker {

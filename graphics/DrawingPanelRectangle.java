@@ -1,5 +1,7 @@
+package graphics;
 import java.awt.*;
-import DrawingPanel.java;
+
+import graphics.DrawingPanel.java;
 
 public class DrawingPanelRectangle {
     public static void main (String[] args) {

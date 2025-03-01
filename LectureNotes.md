@@ -422,6 +422,8 @@ try {
 
 ### Testing of Valid Input
 
+A token based way of data processing.
+
 | Method          | Description                                                                                |
 | --------------- | ------------------------------------------------------------------------------------------ |
 | hasNext()       | returns true if there are any more tokens of input to read (always **true** for **console** input) |
@@ -437,3 +439,6 @@ double number = input.nextDouble();
 System.out.println("Number: " + number);
 sum += number;
 ```
+
+## Lecture 19
+
