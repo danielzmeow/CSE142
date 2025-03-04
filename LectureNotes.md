@@ -443,3 +443,7 @@ sum += number;
 ## Lecture 19
 
 We introduce a line-based data processing method: `.nextLine()`. Be careful to convert all the data into same capitalisation formats.
+
+This is one thing to know is that: The second call to methods starts from where the first call **left off** (not from the beginning).
+
+Carefully thinking the condition when nothing found in the contents, more detail in [Line-based Processing](chapterSix/LineBasedProcessing.java) programme, especially the `try` and `!data.equal("Movie Not Found")` parts.
