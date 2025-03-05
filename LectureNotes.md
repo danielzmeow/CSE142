@@ -447,3 +447,15 @@ We introduce a line-based data processing method: `.nextLine()`. Be careful to c
 This is one thing to know is that: The second call to methods starts from where the first call **left off** (not from the beginning).
 
 Carefully thinking the condition when nothing found in the contents, more detail in [Line-based Processing](chapterSix/LineBasedProcessing.java) programme, especially the `try` and `!data.equal("Movie Not Found")` parts.
+
+## Lecture 20
+
+### Array
+
+```java
+int[] list = new int[10];
+list.length();
+list
+```
+
+In this code, `10` is the length of array
