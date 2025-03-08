@@ -24,4 +24,11 @@ public class ArrayTwo {
         }
         return sum;
     }
+
+    public static void sway (int a, int b)  {
+        int temp = a;
+        int a =b;
+        int b = temp;
+    }
+    
 }

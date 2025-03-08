@@ -482,3 +482,9 @@ When you are using same letter in different type of variables, be careful to rec
 `Array` Class is inside the `java.util.Arrays`, which provide multiple ways to operate the array.
 
 ### Reference Semantics (Objects)
+
+Passing parameters into the method and change them inside it will not change the original value (like copying a new one).
+
+To understand reference, you can say these're multiple people live in same address. Each time you visit one of them, you go to the same address.
+
+Parameter passing works consistently with how variables are handled in terms of copying (Primitive type & Reference type)
