@@ -488,3 +488,14 @@ Passing parameters into the method and change them inside it will not change the
 To understand reference, you can say these're multiple people live in same address. Each time you visit one of them, you go to the same address.
 
 Parameter passing works consistently with how variables are handled in terms of copying (Primitive type & Reference type)
+
+## Lecture 22
+
+### `char` Data Type
+
+```java
+char ch;
+char letter = 'A';
+char unicodeChar = '\u0041';  // This is also 'A'
+char intChar = 65;  // This is also 'A'
+```

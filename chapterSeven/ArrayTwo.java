@@ -18,17 +18,17 @@ public class ArrayTwo {
     }
 
     public static int sumCalculate (int[] numbers) {
-        int sum =0;
+        int sum = 0;
         for (int i = 0; i < numbers.length; i++) {
             sum += numbers[i];
         }
         return sum;
     }
 
-    public static void sway (int a, int b)  {
+    public static void swap(int a, int b)  {
         int temp = a;
-        int a =b;
-        int b = temp;
+        a = b;
+        b = temp;
     }
     
 }
