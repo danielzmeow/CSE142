@@ -437,11 +437,11 @@ try {
 
 A token-based way of data processing.
 
-| Method          | Description                                                                                |
-| --------------- | ------------------------------------------------------------------------------------------ |
+| Method          | Description                                                                                        |
+| --------------- | -------------------------------------------------------------------------------------------------- |
 | hasNext()       | returns true if there are any more tokens of input to read (always **true** for **console** input) |
-| hasNextInt()    | returns true if there is a next token and it can be read as an int                         |
-| hasNextDouble() | returns true if there is a next token and it can be read as a double                       |
+| hasNextInt()    | returns true if there is a next token and it can be read as an int                                 |
+| hasNextDouble() | returns true if there is a next token and it can be read as a double                               |
 
 ### Logic Error with Calling `NextDouble()` Twice
 
@@ -499,3 +499,42 @@ char letter = 'A';
 char unicodeChar = '\u0041';  // This is also 'A'
 char intChar = 65;  // This is also 'A'
 ```
+
+## Lecture 23
+
+### Object Oriented Programming
+
+Java is designed for OOP (Object Oriented Programming).
+
+1970's story: Xerox PARC, GUI: Xerox Alto and the Macintosh. In CLI days, you put in command like `verb + noun (rm -r data.txt)` to run such command. However, in GUI days, you point to some object and do something, which turns to be `noun + verb`. 
+
+There's only one class, which is thought to be a blueprint (a description of constructing objects/instances). View a class as a factory.
+
+| Characteristic             | Local Variables                                            | Class (Instance) Variables                            |
+| -------------------------- | ---------------------------------------------------------- | ----------------------------------------------------- |
+| **Definition**             | Variables declared within methods, constructors, or blocks | Variables declared within a class but outside methods |
+| **Scope**                  | Limited to the block in which they are declared            | Available throughout the entire class                 |
+| **Lifetime**               | Created when block is entered, destroyed when exited       | Exist as long as the object exists                    |
+| **Default Initialization** | Not initialized automatically                              | Automatically initialized (0, false, null, etc.)      |
+| **Access Modifiers**       | Cannot have access modifiers                               | Can have access modifiers (private, public, etc.)     |
+| **Storage Location**       | Stored on the stack                                        | Stored in the heap with the object                    |
+| **Declaration Position**   | Inside methods, constructors, or blocks                    | Inside class, outside methods                         |
+| **Must be Initialized**    | Must be explicitly initialized before use                  | Optional (will use default values)                    |
+| **Accessibility**          | Only within its declaring block                            | From any method in the class                          |
+| **Static Keyword**         | Cannot use static keyword                                  | Can be declared as static (class variable)            |
+
+### Ability to Include Method
+
+| Feature                 | Instance Methods                               | Static Methods                                      |
+| ----------------------- | ---------------------------------------------- | --------------------------------------------------- |
+| Declaration             | Without `static` keyword                       | With `static` keyword                               |
+| Association             | Associated with object instances               | Associated with the class itself                    |
+| Invocation              | Called on object instances (`object.method()`) | Called on the class (`Class.method()`)              |
+| Access to instance data | Can access instance variables/methods          | Cannot access instance variables/methods            |
+| Access to static data   | Can access static variables/methods            | Can access only static variables/methods            |
+| `this` keyword          | Can use `this` to refer to current instance    | Cannot use `this` (no instance context)             |
+| Memory allocation       | One copy per object instance                   | One copy per class                                  |
+| When to use             | When logic depends on instance state           | For utility functions independent of instance state |
+| Overriding              | Can be overridden in subclasses                | Cannot be overridden (can be hidden)                |
+| Example use cases       | Getters/setters, business logic operations     | Utility methods, factory methods, constants         |
+
