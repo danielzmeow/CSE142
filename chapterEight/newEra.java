@@ -8,6 +8,6 @@ public class newEra {
         //object-oriented programming
         p1.translate(-1, -5);
         //procedural programming
-        System.out.println("Point p1: " + p1.x + ", " + p1.y);
+        System.out.println("Point p1: " + p1.convert());
     }
 }

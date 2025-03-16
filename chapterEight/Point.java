@@ -8,4 +8,8 @@ public class Point {
         x += dx;
         y += dy;
     } 
+
+    public String convert() {
+        return "(" + x + ", " + y + ")";
+    }
 }

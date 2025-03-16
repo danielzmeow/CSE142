@@ -538,3 +538,9 @@ There's only one class, which is thought to be a blueprint (a description of con
 | Overriding              | Can be overridden in subclasses                | Cannot be overridden (can be hidden)                |
 | Example use cases       | Getters/setters, business logic operations     | Utility methods, factory methods, constants         |
 
+## Lecture 24
+
+Outside/external view of object: client view. Internal/inside view of an object: implement. One opinion is the client should **NOT** know how the things work.
+
+> An object encapsulates state (fields -- like vars) and exposes behaviour (methods).
+
