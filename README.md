@@ -192,79 +192,77 @@ double weeks = (int) (days / 7);
 
 ### `Scanner` Class
 
- We are about to introduce `Scanner` class. 
+Introducing the `Scanner` class marks a significant step in handling user inputs in Java.
 
- ```java
- //import Java utilities
- import java.util.*;
- ...
- Scanner console = new Scanner(System.in);
- console.nextInt();
- ```
+```java
+// Import Java utilities
+import java.util.*;
+...
+Scanner console = new Scanner(System.in);
+console.nextInt();
+```
 
-Be careful that in any situation, the type of input must be consist with the type of output.
+It's crucial to ensure that the type of input matches the expected output type in every scenario.
 
 ## Lecture 11
 
-If you want to get a value out of `method`, you need to use `return` keyword. Be careful that private variable cannot be used globally. 
+Utilizing the `return` keyword is essential to extract values from a method. Remember, private variables are inaccessible globally.
 
-### If & else
+### If & Else
 
-We actually use `if-else` to prevent some `if` have been executed for more than once. A great example for using `if-else` is shown below.
+The use of `if-else` statements helps prevent the repeated execution of multiple `if` statements. Demonstrated below is a proper example of employing `if-else`.
 
 ```java
 if (test1) {
     statement(1);
 } else if (test2) {
     statement(2);
-} else (test3) {
+} else if (test3) {
     statement(3);
 }
 ```
 
-It must be reminded that `if-if`, `if-else if` and `if-else` are quite **different**. What to choose depends on how many branches you want to execute
+It's important to distinguish between `if-if`, `if-else if`, and `if-else`, as they operate distinctly. The choice depends on the number of possible branches you want to execute.
 
 ## Lecture 12
 
-### Style error
+### Style Errors
 
-**Avoid** using *chaining*. Avoid using method in method and in another method. If you use such chaining, it turns to be a *one-way* method.
-
-Another important thing is to prevent pass in the method never be used.
+**Avoid** chaining methods such as calling one method inside another repeatedly. This can lead to what is known as a *one-way* method. Additionally, ensure that parameters passed into a method are utilized.
 
 ### Primitive and Object Types
 
-For primitive type, it begins with lower case
+Primitive types in Java typically start with a lowercase letter.
 
-### Test `String`
+### Testing `String`
 
-We *almost* cover all the things in `String` class and try use anything if you would like to.
+We have covered almost all aspects of the `String` class, allowing you to explore and utilize them as needed.
 
 | Method                | Description                          |
 | --------------------- | ------------------------------------ |
-| equals(str)           | Contains same character              |
-| equalsIgnoreCase(str) | Contains same character, ignore case |
-| startWith(str)        | One contains other at start          |
-| endWith(str)          | One contains other at end            |
-| contains(str)         | One contains other                   |
+| equals(str)           | Checks if two strings have the same characters |
+| equalsIgnoreCase(str) | Checks character equality, ignoring case    |
+| startsWith(str)       | Checks if one string starts with another |
+| endsWith(str)         | Checks if one string ends with another   |
+| contains(str)         | Checks if one string contains another  |
 
-As a reminder, the `.equals()` method should be symmetric.
+Remember that the `.equals()` method should exhibit symmetry.
 
-### `String` Method
+### `String` Methods
 
 | Method                    | Description                             |
 | ------------------------- | --------------------------------------- |
-| indexOf(str)              | Find the first index of str             |
-| length()                  | Get the length of the string            |
-| substring(index1, index2) | Get the substring from index1 to index2 |
-| toLowerCase()             | A **new** string with all lower case    |
-| toUpperCase()             | A **new** string with all upper case    |
+| indexOf(str)              | Finds the first index of str             |
+| length()                  | Gives the length of the string            |
+| substring(index1, index2) | Extracts a substring from index1 to index2 |
+| toLowerCase()             | Returns a **new** string in lowercase    |
+| toUpperCase()             | Returns a **new** string in uppercase    |
 
 ## Lecture 13
 
 ### `While` Loop
 
-Repeatedly executes its body as long as a logical test is true.
+The `while` loop continues to execute its block of code as long as a specified condition is true.
 
 ```java
 while (test) {
@@ -272,56 +270,57 @@ while (test) {
 }
 ```
 
-> - While Loop: Used when you **don't know** how many iterations you need beforehand. It continues until a condition becomes false
-> - For Loop: Used when you know the number of iterations in advance, typically for iterating over a sequence or range
+- While Loop: Useful when the number of iterations is unknown beforehand, operating until the condition is false.
+- For Loop: Ideal when the number of iterations is predetermined, usually for iterating over sequences or ranges.
 
 ### Fencepost Problem
 
-Narrowly, the Fencepost Problem (or Off-by-One Error) is a programming error that occurs when failing to account for the difference between the number of items versus the number of spaces between them. While widely it can be extended to more condition.
+The Fencepost Problem, or Off-by-One Error, arises when one fails to consider the difference between the number of items and the spaces between them, although it can extend to more complex conditions.
 
 ## Lecture 14
 
- ### `Random` Class
+### `Random` Class
 
-A `Random` object generates pseudo-random* numbers. 
+Creating a `Random` object is essential for generating pseudo-random numbers.
 
-> Pseudo-random: a random generated by algorithm.
+> Pseudo-random: Random numbers generated through algorithms.
 
 | Method        | Description                                                                           |
 | ------------- | ------------------------------------------------------------------------------------- |
-| nextInt       | returns a random integer                                                              |
-| nextInt (max) | returns a random integer in the range [0, max) in other words, 0 to *max-1* inclusive |
-| nextDouble()  | returns a random real number in the range [0.0, 1.0)                                  |
+| nextInt       | Returns a random integer                                                              |
+| nextInt (max) | Generates a random integer between [0, max), i.e., from 0 to *max-1* |
+| nextDouble()  | Produces a random number in the range [0.0, 1.0)                              |
 
-In each case, you first need to have a variable to store a class and then use a method through this variable. For example,
+In each situation, start with declaring a variable for the class and then use its methods. For instance:
 
 ```java
 Random rNumber = new Random();
 rNumber.nextInt(10);
 ```
+
 ## Lecture 15
 
-> Engineering study phyisc because they build artifacts in the physical world.
+> Engineers study physics as they create artifacts in the physical world.
 
 ### Legal Input
 
-It is very hard for you to expect the user always give you an **legal input**.
+Anticipating that users will always provide **valid input** is unrealistic.
 
-We basically need to consider each part of the program carefully.
+Every component of the program requires careful consideration.
 
 ## Lecture 16
 
 ### Type `boolean`
 
-One of the primitive type in *Java*, which starts with lowercase letter.
+This primitive type in Java, lowercase, represents two possible values: true or false.
 
-Or: `||`  Any of the condition is true.
+Logical operators:
+- Or: `||` If any condition is true.
+- And: `&&` If all conditions are true.
 
-And: `&&` All the condition is true.
+### Miscellaneous
 
-### Other
-
-When `return` is run, the method will exit immediately.
+Once `return` is executed, the method exits instantly.
 
 ```java
 public static boolean lucky (Random rNumber) {
@@ -338,25 +337,25 @@ public static boolean lucky (Random rNumber) {
 
 ## Lecture 17
 
-Functional programming tend to show what you want directly instead of varieties of details.
+Functional programming focuses on conveying intentions directly, bypassing extensive procedural details.
 
-### Array
+### Arrays
 
-We can use `int[] array` to define an array in Java.
+Define an array in Java with `int[] array`.
 
-To initialize an array, use such format
+Initialize an array by:
 
 ```java
 int[] array = {1, 2, 3, 4, 5};
 ```
 
-To get specific object in one array, use `array[n]` to do so. `n` is the order of the specific number in array.
+Access specific elements using `array[n]`, where `n` is the index.
 
 ### Functional Programming
 
-Old school Java programming is considered to be object-oriented programming.
+Traditional Java differs from functional programming primarily in its object-oriented paradigm.
 
-Functional programming tend to show few details with more specific of **what you want** .
+Functional programming emphasizes minimal details, focusing on clearly specifying your goals.
 
 | Aspect               | Traditional Java (OOP)          | Functional Programming              |
 | -------------------- | ------------------------------- | ----------------------------------- |
@@ -369,59 +368,58 @@ Functional programming tend to show few details with more specific of **what you
 | **Error Handling**   | Exceptions                      | Return values (e.g., Option/Either) |
 | **Inheritance**      | Core feature                    | Composition over inheritance        |
 
-We give a compare below.
+Compare the two styles below:
 
 ```java
+// Traditional loop
 for (int i = 0; i < numbers.length; i++) {
     System.out.print(numbers[i] + " ");
 }
-```
 
-```java
+// Functional approach
 Arrays.stream(numbers).forEach(number -> System.out.print(number + " "));
 ```
 
-### Anonymous Functions: lambda
+### Anonymous Functions: Lambda Expressions
 
-Stream: source -> modifier -> terminator
+The Stream: Source `->` Modifier `->` Terminator model is crucial here.
 
-Lambda expression (`element -> System.out.print(element)`) is like saying, "When you get an element, go to this place and do this thing."
+Lambda expression (`element -> System.out.print(element)`) specifies an action for each element.
 
-Method reference (`System.out::print`) is like saying, "Here's the address of the place. Go there when you get an element."
+Method reference (`System.out::print`) offers a shorthand approach for commonly invoked methods.
 
 ## Lecture 18
 
-An important one of intro computer science. 
+An essential computer science concept involves handling files and input streams.
 
 ```java
 import java.io.*;
 File file = new File("numbers.txt");
 ```
 
-### Path
+### Paths
 
-Absolute path: the route of the file system like: `/Users/danielzhang/developer`
-
-Relative path: path related to your **working directory**
+- **Absolute Path**: Full directory list like `/Users/username/developer`.
+- **Relative Path**: Path relative to the **current working directory**.
 
 ### Plumbing Model
 
-You can imagine things flow through pipes from one to another
+Visualize data flowing through a series of connected pipes or components.
 
-You can always view `scanner` as faucet, which is a way to connect source and terminal things.
+A `Scanner` acts as a faucet, linking sources with terminators.
 
 ```java
 import java.io.*;
 File file = new File("numbers.txt");
-Scanner input = new scanner(file);
+Scanner input = new Scanner(file);
 input.nextDouble();
 ```
 
-It is, however, important to check for the *file not found exception* condition. Use the structure below to solve it.
+Ensure you handle *file not found exceptions* with a structure similar to this:
 
 ```java
 try {
-    File numberFile = new File("numbers.one");
+    File numberFile = new File("numbers.txt");
     Scanner input = new Scanner(numberFile);
     System.out.println(input.nextLine());
     input.close();
@@ -432,23 +430,23 @@ try {
 
 ### Round-Off Error
 
-1. Finite Precision: Computers store numbers using a fixed number of bits, which limits the precision.
-2. Floating-Point Representation: Most real numbers are represented in floating-point format (like IEEE 754), which has inherent limitations
-3. Binary Representation: Computers use binary, which means some decimal numbers cannot be represented exactly (e.g., 0.1 in decimal cannot be represented exactly in binary).
+1. Finite Precision: Limited bits restrict numerical representation.
+2. Floating-Point: Format like IEEE 754 has inherent limits.
+3. Binary Representation: Some decimals (e.g., 0.1) cannot be perfectly represented in binary.
 
-### Testing of Valid Input
+### Valid Input Testing
 
-A token-based way of data processing.
+A token-based data processing approach ensures validity.
 
 | Method          | Description                                                                                        |
 | --------------- | -------------------------------------------------------------------------------------------------- |
-| hasNext()       | returns true if there are any more tokens of input to read (always **true** for **console** input) |
-| hasNextInt()    | returns true if there is a next token and it can be read as an int                                 |
-| hasNextDouble() | returns true if there is a next token and it can be read as a double                               |
+| hasNext()       | Checks if more tokens are available (always **true** for **console** inputs) |
+| hasNextInt()    | Verifies if the next token is an integer                                 |
+| hasNextDouble() | Confirms if the next token is a double                               |
 
-### Logic Error with Calling `NextDouble()` Twice
+### Logical Error with `nextDouble()`
 
-You must realise that if you do not store it into a variable, it will be called twice in such codes. (The `double number = input.nextDouble()` part)
+Double-check if `nextDouble()` is mistakenly called twice without storage.
 
 ```java
 double number = input.nextDouble();
@@ -456,90 +454,88 @@ System.out.println("Number: " + number);
 sum += number;
 ```
 
-## Lecture 19
-
-We introduce a line-based data processing method: `.nextLine()`. Be careful to convert all the data into same capitalisation formats.
-
-This is one thing to know is that: The second call to methods starts from where the first call **left off** (not from the beginning).
-
-Carefully thinking the condition when nothing found in the contents, more detail in [Line-based Processing](chapterSix/LineBasedProcessing.java) programme, especially the `try` and `!data.equal("Movie Not Found")` parts.
+When storing it, ensure it won't be accessed twice accidentally.
 
 ## Lecture 20
 
-### Array
+### Introduction to Arrays
+
+Here’s how you might declare an array in Java: 
 
 ```java
 int[] list = new int[10];
 list.length();
-list
+list;
 ```
 
-In this code, `10` is the length of array. The array calling is such kind of **Random** access.
+In this snippet, the array is initialized to have 10 elements. Notably, accessing elements in an array features the attribute of **random access**, allowing you to reach any index with the same efficiency.
 
 ## Lecture 21
 
-When you are using same letter in different type of variables, be careful to recognise its different. For example `i` and `array[i]`.
+When you utilize variables with similar naming, such as `i` and `array[i]`, exercise caution to maintain clarity between them.
 
-### `Array` Class
+### The `Array` Class 
 
-`Array` Class is inside the `java.util.Arrays`, which provide multiple ways to operate the array.
+Located within `java.util.Arrays`, the `Array` class offers a plethora of methods tailored for array manipulation, enhancing the efficiency of operations.
 
-### Reference Semantics (Objects)
+### Understanding Reference Semantics
 
-Passing parameters into the method and change them inside it will not change the original value (like copying a new one).
+Modifying parameters within a method does not alter the original data; rather, it behaves like creating a copy. Imagine several individuals sharing the same address—each visit takes you to that identical location.
 
-To understand reference, you can say these're multiple people live in same address. Each time you visit one of them, you go to the same address.
-
-Parameter passing works consistently with how variables are handled in terms of copying (Primitive type & Reference type)
+The way Java manages parameter passing remains consistent with variable copying rules, whether they are of a primitive or reference type.
 
 ## Lecture 22
-
-### `char` Data Type
 
 ```java
 char ch;
 char letter = 'A';
-char unicodeChar = '\u0041';  // This is also 'A'
-char intChar = 65;  // This is also 'A'
+char unicodeChar = '\u0041';  // Represents 'A' in Unicode
+char intChar = 65;  // Numeric representation of 'A'
 ```
+
+This segment showcases the versatility of the `char` data type, embracing symbols, Unicode, and direct integer values.
 
 ## Lecture 23
 
-### Object Oriented Programming
+Java's architecture is inherently aligned with Object-Oriented Programming (OOP) principles. 
 
-Java is designed for OOP (Object Oriented Programming).
+### A Blast from the Past: OOP's Evolution
 
-1970's story: Xerox PARC, GUI: Xerox Alto and the Macintosh. In CLI days, you put in command like `verb + noun (rm -r data.txt)` to run such command. However, in GUI days, you point to some object and do something, which turns to be `noun + verb`. 
+Recalling the 1970s at Xerox PARC, groundbreaking work on GUI systems like the Xerox Alto inspired transitions from command-line interfaces (CLI) to graphical user interfaces (GUI), shifting from `verb + noun` commands to `noun + verb` interactions.
 
-There's only one class, which is thought to be a blueprint (a description of constructing objects/instances). View a class as a factory.
+### The Pillars of Classes
+
+Classes serve as blueprints for object creation, akin to factories producing specific items.
+
+### Comparing Local and Class Variables
 
 | Characteristic             | Local Variables                                            | Class (Instance) Variables                            |
 | -------------------------- | ---------------------------------------------------------- | ----------------------------------------------------- |
-| **Definition**             | Variables declared within methods, constructors, or blocks | Variables declared within a class but outside methods |
-| **Scope**                  | Limited to the block in which they are declared            | Available throughout the entire class                 |
-| **Lifetime**               | Created when block is entered, destroyed when exited       | Exist as long as the object exists                    |
-| **Default Initialization** | Not initialized automatically                              | Automatically initialized (0, false, null, etc.)      |
-| **Access Modifiers**       | Cannot have access modifiers                               | Can have access modifiers (private, public, etc.)     |
-| **Storage Location**       | Stored on the stack                                        | Stored in the heap with the object                    |
-| **Declaration Position**   | Inside methods, constructors, or blocks                    | Inside class, outside methods                         |
-| **Must be Initialized**    | Must be explicitly initialized before use                  | Optional (will use default values)                    |
-| **Accessibility**          | Only within its declaring block                            | From any method in the class                          |
-| **Static Keyword**         | Cannot use static keyword                                  | Can be declared as static (class variable)            |
+| **Definition**             | Found within methods, constructors, or blocks              | Reside within a class but outside methods             |
+| **Scope**                  | Confined to the block where they appear                    | Accessible throughout the class                       |
+| **Lifetime**               | Exists briefly during block execution                      | Lasts as long as the object                           |
+| **Initialization**         | Requires explicit initial setup                            | Default values (0, false, null, etc.) are provided   |
+| **Access Modifiers**       | Cannot utilize access modifiers                            | Free to use modifiers like private or public          |
+| **Storage Location**       | Located on the stack                                       | Stored on the heap                                    |
+| **Declaration Position**   | Within methods or blocks                                   | Within class, outside methods                         |
+| **Initialization Need**    | Must be initialized before use                             | Optional initialization                               |
+| **Access Range**           | Limited to its declaring block                             | Available to any class method                         |
+| **Static Modifier**        | Cannot be static                                           | Can be static (class-level variable)                  |
 
-### Ability to Include Method
+### Methods: Instance vs. Static
 
 | Feature                 | Instance Methods                               | Static Methods                                      |
 | ----------------------- | ---------------------------------------------- | --------------------------------------------------- |
-| Declaration             | Without `static` keyword                       | With `static` keyword                               |
-| Association             | Associated with object instances               | Associated with the class itself                    |
-| Invocation              | Called on object instances (`object.method()`) | Called on the class (`Class.method()`)              |
-| Access to instance data | Can access instance variables/methods          | Cannot access instance variables/methods            |
-| Access to static data   | Can access static variables/methods            | Can access only static variables/methods            |
-| `this` keyword          | Can use `this` to refer to current instance    | Cannot use `this` (no instance context)             |
-| Memory allocation       | One copy per object instance                   | One copy per class                                  |
-| When to use             | When logic depends on instance state           | For utility functions independent of instance state |
-| Overriding              | Can be overridden in subclasses                | Cannot be overridden (can be hidden)                |
-| Example use cases       | Getters/setters, business logic operations     | Utility methods, factory methods, constants         |
+| Declaration             | Omit `static`                                  | Use `static`                                        |
+| Association             | Tied to instances                              | Tied to the class                                   |
+| Invocation              | Called through object instances                | Invoked via the class                               |
+| Instance Data Access    | Access instance variables or methods           | Restricted to static data                           |
+| Static Data Access      | Can freely access static data                  | Only static data                                    |
+| Keyword `this`          | Allowed to use in current context              | Inapplicable                                        |
+| Memory Dynamics         | Each instance holds its own                    | Single copy for the class                           |
+| Suitable Scenarios      | Instance-specific logic                        | Utility functions, independent operations           |
+| Overriding Capability   | Overridable in child classes                   | Only hidden, not overridden                         |
+| Usage Examples          | Accessors/mutators, core logic                 | Helper or factory methods, static constants         |
 
 ## Lecture 24
 
@@ -584,5 +580,3 @@ public class Person {
     }
 }
 ```
-
-## Lecture 25
