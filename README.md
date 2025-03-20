@@ -13,19 +13,19 @@ I do hope one day, it can remind me of my **original intention** of my final dec
 
 # Lecture Notes
 
-I just use VSCode for writing codes with help of GitHub Copilot. It is not quite traditional but it is quite fun.
+Using VSCode paired with GitHub Copilot for code writing may not be the traditional approach, but it's certainly enjoyable.
 
-This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)
+This content is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1).
 
 ---
 
 ## Lecture 1
 
-Try to view it as a new kind of language and learn the *thinking process* of using a new kind of language.
+Consider looking at it as an entirely new language and focus on mastering the *cognitive framework* associated with learning this novel language.
 
-### Printing "Hello, World!"
+### Displaying "Hello, World!"
 
-> An old convention to print "Hello, World!"
+> A classic tradition is to print "Hello, World!" to the console.
 
 ```java
 public class Hello {
@@ -36,140 +36,142 @@ public class Hello {
 }
 ```
 
-### Class and Escape sequence
+### Class and Escape Sequences
 
-**class** should be a word with capital letter, we'll get to the point of `public static void main(String[] args)` in Chapter VII.
+The term **class** should be capitalized. The detailed explanation of `public static void main(String[] args)` will be covered in Chapter VII.
 
-**escape sequence**: `\` A two character sequence to represent a single character.
+**Escape sequences**: Represented by `\`, these are two-character combinations used to symbolize a single character.
 
 ## Lecture 2
 
-The sense of **subtask**: Do not put all your code in the main method, instead, using more sub-method to represent different parts.
+Understanding **subtasks**: Avoid placing all your code within the `main` method; instead, utilize multiple sub-methods to delineate different sections.
 
-You can define your own static methods like `public static void [name]([parameters])`.
+You have the ability to create your own static methods such as `public static void [name]([parameters])`.
 
-### Method
+### Methodology
 
-**method** begins with lower case letter, you should name it in that way: `thisIsAReallyLongMethodInJava`.
+When naming a **method**, start with a lowercase letter, following a format like: `thisIsAReallyLongMethodInJava`.
 
 ## Lecture 3
 
-An idea between *discrete* and *continuous*.
+The concept of distinguishing between *discrete* and *continuous*.
 
 ## Lecture 4
 
-Take consideration of one important thing: the essence difference between odd and even is related to the number we get while being modded.
+Contemplate a crucial concept: the fundamental distinction between odd and even numbers lies in the remainder obtained when they are divided.
 
-In this case, carefully thinking about the usage of mod and other ways of calculating.
+In this context, analyzing the application of the modulo operation and other computational methods is essential.
 
-### `For` Loop
+### `For` Loop Structure
 
-> *C* did For Loops this way so did *C++* and so *Java* decided to copy. 
+> *C*'s approach to For Loops was mimicked by *C++*, leading *Java* to adopt a similar method.
 
 ```java
 for (init; test; update) {
-    body
+    body;
 }
 ```
 
 ## Lecture 5
 
-The ability to disassemble tasks is important, we begin with fixed situation, then we explore further to more common situation.
+The capacity to deconstruct tasks is vital; begin with fixed scenarios and gradually extend to more general cases.
 
-### `Final`
+### `final` Keyword Usage
 
-The usage of `final`: It is something in **class** layer, instead of inside any method. For each element used as final, it will become an **immutable** element.
+The `final` keyword applies at the **class** level rather than within methods. Any element declared as final becomes **immutable**.
 
 ## Lecture 6
 
-Try merge repeated used codes.
+Effort should be made to consolidate repeatedly used code segments.
 
-### Variables
+### Understanding Variables
 
-**Variable scope**: the part of program where variable exists. For example,
+**Variable scope** defines the region within a program where a variable is accessible. For instance,
 
 ```java
 public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
 ```
-**Local variable**: the variable only available inside the scope.
 
-**Global variable**: we do have it. Try **DON'T** use it til now.
+**Local variables** exist solely within their scope.
 
-Focus on individual components.
+**Global variables** are possible but should be avoided, at least for now.
+
+Focus on individual elements.
 
 ### Information Flow
 
-The **parameter** is designed to let information to **flow into** method.
+**Parameters** facilitate the transmission of information **into** a method.
 
 ## Lecture 7
 
-Java is not only designed for procedural programming. Java is an object-oriented language. **Practice** of objects usage is important.
+Java supports more than just procedural programming. As an object-oriented language, mastering **object handling** is crucial.
 
-### Types
+### Type Categories
 
 **Primitive types** begin with lowercase letters.
 
-**Object types** are defined by class, which begin with capital letter.
+**Object types** are delineated by class, which commence with uppercase letters.
 
-Codes to add new object are shown below:
+Here's how to instantiate a new object:
 
 ```java
 Scanner input1 = new Scanner(System.in)
 [Class] [Variable] = [Keyword] [Class(Argument)]
 ```
-### Class defined variables
 
-The `[Class]` define the type of `[Variable]`.
+### Class-Defined Variables
 
-Variable stores a reference to the object.
+The `Class` specifies the type of `Variable`.
 
-### Object-Oriented Programming
+Variables store pointers to the object.
 
-Object-oriented means you need to *talk with* object, for example: `panel.getGraphics().drawRect()` needs `.getGraphics()` because only **graphics** can draw something.
+### Object-Oriented Programming Concepts
+
+In object-oriented design, interaction with objects is fundamental. For example: invoking `panel.getGraphics().drawRect()` requires `.getGraphics()` because only <em>graphics</em> objects can execute drawing functions.
 
 ## Lecture 8
 
-Keep `main` concise when you can. It should some kind of fuse to **boom** the whole programmes.
+Keep `main` streamlined whenever feasible, acting as a kind of trigger to initiate the program.
 
-This lecture basically repeats about parameters and do this again and again.
+This segment largely reiterates points on parameters, emphasizing repetitive practice.
 
 ## Lecture 9
 
-### `Math` Class
+### Utilizing the `Math` Class
 
-`Math` Class is the standard way for you in Java to calculate math related things.
+The `Math` class in Java offers a comprehensive toolkit for conducting mathematical operations.
 
-When a method do something to a value, it is possible for the method to return a value but you do nothing with it. So you need variable to tore it.
+When a method processes a value, it may return a result, which requires storage in a variable to be used effectively.
 
-> Don’t be afraid of too much variables.
+> Don't shy away from creating multiple variables.
 
-For `public static void ...`, the `void` is return value. Java cares about the type of the objects.
+In `public static void ...`, the `void` indicates absence of a return value. Java requires strict adherence to object type definitions.
 
-### Current time
+### Accessing Current Time
 
-According to another old convention, in modern language, most of the initial time is setted to 1970/1/1.
+Following another time-honored practice, contemporary languages often default initial time to 1970/1/1.
 
-We are about to introduce a way to get current time:
+Here’s a method to access the current time:
 
 ```java
 int millis = System.currentTimeMillis();
 ```
 
-Be careful that the value it returns is the difference between 1970/1/1 and current time in milliseconds. The returning value is based on `long`, which can store more more date.
+Bear in mind that the returned value reflects the elapsed milliseconds since 1970/1/1, based on `long`, capable of handling larger datasets.
 
-> `int` is a 32-bit integer data type that can store numbers from -2³¹ to 2³¹-1, while `long` is a 64-bit integer data type that can store much larger numbers from -2⁶³ to 2⁶³-1
+> `int` is a 32-bit data type, covering values from -2³¹ to 2³¹-1, whereas `long` offers 64-bit storage, accommodating much larger figures from -2⁶³ to 2⁶³-1.
 
-### Integer overflow
+### Handling Integer Overflow
 
-Plus, it like a joke but it do show the integer overflow in the method `.nanoTime`.
+While it may seem humorous, the `.nanoTime` method demonstrates integer overflow.
 
-> Differences in successive calls that span greater than approximately 292 years (263 nanoseconds) will not correctly compute elapsed time due to numerical overflow
+> If differences between consecutive calls extend beyond approximately 292 years (263 nanoseconds), elapsed time calculations may be inaccurate due to numerical overflow.
 
-### Information flow
+### Information Flow Dynamics
 
-**Understand information FLOW over different method is important.** For example,
+**Awareness of how information flows across different methods is paramount.** Consider the example below:
 
 ```java
 public static double convertToDays(double millis) {
@@ -177,9 +179,10 @@ public static double convertToDays(double millis) {
     return answers;
 }
 ```
-For the `double millis`, it is the value it requires to pass in. And for the `double answers`, it is the value it returns.
 
-There is a simple way to convert double to `int`
+In `double millis`, the parameter is required as input. Meanwhile, `double answers` is what the method returns.
+
+There exists a straightforward technique to cast a double to an `int`:
 
 ```java
 double weeks = (int) (days / 7);
@@ -540,7 +543,46 @@ There's only one class, which is thought to be a blueprint (a description of con
 
 ## Lecture 24
 
-Outside/external view of object: client view. Internal/inside view of an object: implement. One opinion is the client should **NOT** know how the things work.
+### Object Views: External vs. Internal
 
-> An object encapsulates state (fields -- like vars) and exposes behaviour (methods).
+From an external standpoint, an object presents a *client* view, while internally, it represents *implementation*. There's a prevailing belief that clients should remain unaware of the underlying mechanisms.
 
+> An object encapsulates its state (*fields*, comparable to *variables*) and reveals its behavior through methods.
+
+### Constructors
+
+A constructor is uniquely invoked using `new`.
+
+### The Role of `private`
+
+The `private` keyword is a powerful attribute that ensures the confidentiality of class components, restricting their accessibility to the class itself. Here's what this entails:
+
+- No external code can directly interact with private attributes.
+- Private members remain inaccessible even to subclasses of the containing class.
+- Objects originating from the same class are unable to access each other's private attributes.
+
+Due to this encapsulation, the use of *getters* and *setters* becomes essential for managing private data. Consider the following example:
+
+```java
+public class Person {
+    private int age;
+    
+    // Constructor
+    public Person(int age) {
+        this.age = age; 
+        // Here, this.age refers to the instance variable, while age is the method parameter.
+    }
+    
+    // Getter
+    public int getAge() {
+        return age;
+    }
+    
+    // Setter
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
+```
+
+## Lecture 25
