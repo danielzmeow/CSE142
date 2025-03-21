@@ -4,9 +4,8 @@ public class Point {
     private int x;
     private int y;
 
-    public Point(int initialX, int initialY) {
-        x = initialX;
-        y = initialY;
+    public Point(int x, int y) {
+        setPoint(x, y);
     }
 
     public int getX() {

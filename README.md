@@ -580,3 +580,7 @@ public class Person {
     }
 }
 ```
+
+## Lecture 25
+
+All information is conveyed through code, so please refer to the commit message and comments for details.
