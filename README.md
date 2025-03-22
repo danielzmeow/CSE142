@@ -17,6 +17,8 @@ Using VSCode paired with GitHub Copilot for code writing may not be the traditio
 
 This content is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1).
 
+***Every element has been meticulously rephrased by OpenAI GPT-4o to minimize the risk of errors or expressions unfamiliar to the local context.***
+
 ---
 
 ## Lecture 1
@@ -238,25 +240,25 @@ Primitive types in Java typically start with a lowercase letter.
 
 We have covered almost all aspects of the `String` class, allowing you to explore and utilize them as needed.
 
-| Method                | Description                          |
-| --------------------- | ------------------------------------ |
+| Method                | Description                                    |
+| --------------------- | ---------------------------------------------- |
 | equals(str)           | Checks if two strings have the same characters |
-| equalsIgnoreCase(str) | Checks character equality, ignoring case    |
-| startsWith(str)       | Checks if one string starts with another |
-| endsWith(str)         | Checks if one string ends with another   |
-| contains(str)         | Checks if one string contains another  |
+| equalsIgnoreCase(str) | Checks character equality, ignoring case       |
+| startsWith(str)       | Checks if one string starts with another       |
+| endsWith(str)         | Checks if one string ends with another         |
+| contains(str)         | Checks if one string contains another          |
 
 Remember that the `.equals()` method should exhibit symmetry.
 
 ### `String` Methods
 
-| Method                    | Description                             |
-| ------------------------- | --------------------------------------- |
-| indexOf(str)              | Finds the first index of str             |
-| length()                  | Gives the length of the string            |
+| Method                    | Description                                |
+| ------------------------- | ------------------------------------------ |
+| indexOf(str)              | Finds the first index of str               |
+| length()                  | Gives the length of the string             |
 | substring(index1, index2) | Extracts a substring from index1 to index2 |
-| toLowerCase()             | Returns a **new** string in lowercase    |
-| toUpperCase()             | Returns a **new** string in uppercase    |
+| toLowerCase()             | Returns a **new** string in lowercase      |
+| toUpperCase()             | Returns a **new** string in uppercase      |
 
 ## Lecture 13
 
@@ -285,11 +287,11 @@ Creating a `Random` object is essential for generating pseudo-random numbers.
 
 > Pseudo-random: Random numbers generated through algorithms.
 
-| Method        | Description                                                                           |
-| ------------- | ------------------------------------------------------------------------------------- |
-| nextInt       | Returns a random integer                                                              |
+| Method        | Description                                                          |
+| ------------- | -------------------------------------------------------------------- |
+| nextInt       | Returns a random integer                                             |
 | nextInt (max) | Generates a random integer between [0, max), i.e., from 0 to *max-1* |
-| nextDouble()  | Produces a random number in the range [0.0, 1.0)                              |
+| nextDouble()  | Produces a random number in the range [0.0, 1.0)                     |
 
 In each situation, start with declaring a variable for the class and then use its methods. For instance:
 
@@ -438,11 +440,11 @@ try {
 
 A token-based data processing approach ensures validity.
 
-| Method          | Description                                                                                        |
-| --------------- | -------------------------------------------------------------------------------------------------- |
+| Method          | Description                                                                  |
+| --------------- | ---------------------------------------------------------------------------- |
 | hasNext()       | Checks if more tokens are available (always **true** for **console** inputs) |
-| hasNextInt()    | Verifies if the next token is an integer                                 |
-| hasNextDouble() | Confirms if the next token is a double                               |
+| hasNextInt()    | Verifies if the next token is an integer                                     |
+| hasNextDouble() | Confirms if the next token is a double                                       |
 
 ### Logical Error with `nextDouble()`
 
@@ -509,33 +511,33 @@ Classes serve as blueprints for object creation, akin to factories producing spe
 
 ### Comparing Local and Class Variables
 
-| Characteristic             | Local Variables                                            | Class (Instance) Variables                            |
-| -------------------------- | ---------------------------------------------------------- | ----------------------------------------------------- |
-| **Definition**             | Found within methods, constructors, or blocks              | Reside within a class but outside methods             |
-| **Scope**                  | Confined to the block where they appear                    | Accessible throughout the class                       |
-| **Lifetime**               | Exists briefly during block execution                      | Lasts as long as the object                           |
-| **Initialization**         | Requires explicit initial setup                            | Default values (0, false, null, etc.) are provided   |
-| **Access Modifiers**       | Cannot utilize access modifiers                            | Free to use modifiers like private or public          |
-| **Storage Location**       | Located on the stack                                       | Stored on the heap                                    |
-| **Declaration Position**   | Within methods or blocks                                   | Within class, outside methods                         |
-| **Initialization Need**    | Must be initialized before use                             | Optional initialization                               |
-| **Access Range**           | Limited to its declaring block                             | Available to any class method                         |
-| **Static Modifier**        | Cannot be static                                           | Can be static (class-level variable)                  |
+| Characteristic           | Local Variables                               | Class (Instance) Variables                         |
+| ------------------------ | --------------------------------------------- | -------------------------------------------------- |
+| **Definition**           | Found within methods, constructors, or blocks | Reside within a class but outside methods          |
+| **Scope**                | Confined to the block where they appear       | Accessible throughout the class                    |
+| **Lifetime**             | Exists briefly during block execution         | Lasts as long as the object                        |
+| **Initialization**       | Requires explicit initial setup               | Default values (0, false, null, etc.) are provided |
+| **Access Modifiers**     | Cannot utilize access modifiers               | Free to use modifiers like private or public       |
+| **Storage Location**     | Located on the stack                          | Stored on the heap                                 |
+| **Declaration Position** | Within methods or blocks                      | Within class, outside methods                      |
+| **Initialization Need**  | Must be initialized before use                | Optional initialization                            |
+| **Access Range**         | Limited to its declaring block                | Available to any class method                      |
+| **Static Modifier**      | Cannot be static                              | Can be static (class-level variable)               |
 
 ### Methods: Instance vs. Static
 
-| Feature                 | Instance Methods                               | Static Methods                                      |
-| ----------------------- | ---------------------------------------------- | --------------------------------------------------- |
-| Declaration             | Omit `static`                                  | Use `static`                                        |
-| Association             | Tied to instances                              | Tied to the class                                   |
-| Invocation              | Called through object instances                | Invoked via the class                               |
-| Instance Data Access    | Access instance variables or methods           | Restricted to static data                           |
-| Static Data Access      | Can freely access static data                  | Only static data                                    |
-| Keyword `this`          | Allowed to use in current context              | Inapplicable                                        |
-| Memory Dynamics         | Each instance holds its own                    | Single copy for the class                           |
-| Suitable Scenarios      | Instance-specific logic                        | Utility functions, independent operations           |
-| Overriding Capability   | Overridable in child classes                   | Only hidden, not overridden                         |
-| Usage Examples          | Accessors/mutators, core logic                 | Helper or factory methods, static constants         |
+| Feature               | Instance Methods                     | Static Methods                              |
+| --------------------- | ------------------------------------ | ------------------------------------------- |
+| Declaration           | Omit `static`                        | Use `static`                                |
+| Association           | Tied to instances                    | Tied to the class                           |
+| Invocation            | Called through object instances      | Invoked via the class                       |
+| Instance Data Access  | Access instance variables or methods | Restricted to static data                   |
+| Static Data Access    | Can freely access static data        | Only static data                            |
+| Keyword `this`        | Allowed to use in current context    | Inapplicable                                |
+| Memory Dynamics       | Each instance holds its own          | Single copy for the class                   |
+| Suitable Scenarios    | Instance-specific logic              | Utility functions, independent operations   |
+| Overriding Capability | Overridable in child classes         | Only hidden, not overridden                 |
+| Usage Examples        | Accessors/mutators, core logic       | Helper or factory methods, static constants |
 
 ## Lecture 24
 
@@ -584,3 +586,38 @@ public class Person {
 ## Lecture 25
 
 All information is conveyed through code, so please refer to the commit message and comments for details.
+
+## Lecture 26
+
+**Inheritance** is a fundamental principle in object-oriented programming. The concept of hierarchy (*is A*) plays a vital role throughout the programming lifecycle. The primary objective of inheritance is to effectively reuse code.
+
+> A legal secretary **is A** type of secretary, a legal secretary **is A** type of clerical employee, and a clerical employee **is A** type of employee.
+
+It's preferable to have a single, generic repository to keep all data together, rather than creating separate copies for various categories.
+
+
+```java
+public class A (extend objects) {
+    public void methodOne () { Action1; }
+
+    public void methodTwo () { Action2; }
+    // Class A as a super class 
+}
+public class B extend A {
+    public void methodOne() { Action 4; }
+    public void methodThree() { Action 3; }
+    // Class B as a sub-class of A
+}
+```
+
+| Class | methodOne | methodTwo | methodThree |
+| ----- | --------- | --------- | ----------- |
+| A     | Action1   | Action2   | N/A         |
+| B     | Action4   | Action2   | Action3     |
+
+The table above illustrates the methods for both overriding and inheritance.
+
+Several essential aspects to consider are:
+
+- You have the ability to override the behaviour defined in a superclass.
+- You can also inherit behaviors from a superclass.
