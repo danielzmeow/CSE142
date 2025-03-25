@@ -1,4 +1,3 @@
-package chapterFour;
 // This program finds the body mass index (BMI) for two individuals.  This
 // variation includes several methods other than method main that provide
 // structure and eliminate redundancy.
@@ -6,6 +5,7 @@ package chapterFour;
 import java.util.*;
 
 public class BMIFromCSE {
+
     public static void main(String[] args) {
         giveIntro();
         Scanner console = new Scanner(System.in);
@@ -38,7 +38,7 @@ public class BMIFromCSE {
     // returns the body mass index for the given height (in inches) and weight
     // (in pounds)
     public static double BMIFor(double height, double weight) {
-        return weight / (height * height) * 703;
+        return (weight / (height * height)) * 703;
     }
 
     // reports the overall bmi values and weight status to the user

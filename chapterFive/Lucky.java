@@ -1,7 +1,7 @@
-package chapterFive;
 import java.util.*;
 
 public class Lucky {
+
     public static void main(String[] args) {
         Random rNumber = new Random();
         boolean lucky = lucky(rNumber);
@@ -9,16 +9,16 @@ public class Lucky {
         System.out.println(digitalSum(2345));
     }
 
-    public static boolean lucky (Random rNumber) {
+    public static boolean lucky(Random rNumber) {
         for (int i = 1; i <= 10; i++) {
             int next = rNumber.nextInt(30);
             System.out.print(next + " ");
             if (next == 7) {
                 return true;
             }
-        } 
+        }
         return false;
-    } 
+    }
 
     public static int digitalSum(int n) {
         int sum = 0;

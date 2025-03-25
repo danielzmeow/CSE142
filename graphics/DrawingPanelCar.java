@@ -1,9 +1,8 @@
-package graphics;
+import graphics.DrawingPanel.java;
 import java.awt.*;
 
-import graphics.DrawingPanel.java;
-
 public class DrawingPanelCar {
+
     public static void main(String[] args) {
         DrawingPanel panel = new DrawingPanel(500, 200);
 
@@ -17,21 +16,31 @@ public class DrawingPanelCar {
         for (int i = 0; i < 300; i++) {
             panel.clear();
             drawCar(g, 10 + i, 30, 100);
-            panel.sleep(30 );
+            panel.sleep(30);
         }
     }
 
     private static void drawCar(Graphics g, int x, int y, int width) {
         g.setColor(Color.BLACK);
-        g.fillRect(x, y, width, width/2);
+        g.fillRect(x, y, width, width / 2);
 
         //Change color to cyan
         g.setColor(Color.CYAN);
-        g.fillRect(x+7*width/10, y+width/10, 3*width/10, width/5);
+        g.fillRect(
+            x + (7 * width) / 10,
+            y + width / 10,
+            (3 * width) / 10,
+            width / 5
+        );
 
         //Change color to red
         g.setColor(Color.RED);
-        g.fillOval(x+width/10, y+4*width/10, width/5, width/5);
-        g.fillOval(x+7*width/10, y+4*width/10, width/5, width/5);
+        g.fillOval(x + width / 10, y + (4 * width) / 10, width / 5, width / 5);
+        g.fillOval(
+            x + (7 * width) / 10,
+            y + (4 * width) / 10,
+            width / 5,
+            width / 5
+        );
     }
 }

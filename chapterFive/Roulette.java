@@ -1,7 +1,7 @@
-package chapterFive;
 import java.util.*;
 
 public class Roulette {
+
     public static void main(String[] args) {
         System.out.println("Roulette game started!");
         Random rNumber = new Random();
@@ -19,7 +19,9 @@ public class Roulette {
 
             max = Math.max(max, money);
 
-            System.out.println("bet: " + bet + ", spin: " + spin + ", money: " + money);
+            System.out.println(
+                "bet: " + bet + ", spin: " + spin + ", money: " + money
+            );
         }
 
         //It is not related to the while condition. As it jumps off the while loop, the game ends.

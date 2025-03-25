@@ -1,8 +1,8 @@
-package chapterThree;
 import java.util.*;
 
 public class SayCheese {
-    public static void main (String[] args) {
+
+    public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         System.out.println("Say Cheese: ");
         String input = console.nextLine();

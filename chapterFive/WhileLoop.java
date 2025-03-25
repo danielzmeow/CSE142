@@ -1,9 +1,8 @@
-package chapterFive;
 import java.util.Scanner;
 
 public class WhileLoop {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         int sum = 0;
         System.out.print("Enter a number: ");

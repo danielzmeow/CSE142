@@ -1,7 +1,7 @@
-package graphics;
 import java.util.Scanner;
 
 public class DrawPattern {
+
     //Public Variables
     private static int column = 12;
 
@@ -11,7 +11,7 @@ public class DrawPattern {
         System.out.print("Please input column (Must be multiple of 4): ");
         column = scanner.nextInt();
         scanner.close();
-        
+
         //Main drawing parts
         drawLine();
         drawTopHalf();
@@ -36,7 +36,7 @@ public class DrawPattern {
 
             System.out.print("<>");
 
-            for (int j = 0; j < (4*i); j++) {
+            for (int j = 0; j < (4 * i); j++) {
                 System.out.print("*");
             }
 

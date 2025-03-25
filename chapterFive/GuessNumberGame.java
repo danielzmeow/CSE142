@@ -1,7 +1,7 @@
-package chapterFive;
 import java.util.*;
 
 public class GuessNumberGame {
+
     public static void main(String[] args) {
         System.out.println("Plz guess an even one-digital number:");
         Random rNumber = new Random();

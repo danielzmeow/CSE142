@@ -1,6 +1,5 @@
-package chapterEight;
-
 public class newEra {
+
     public static void main(String[] args) {
         System.out.println("Java & OOP");
         Point p1 = new Point(5, 10);

@@ -1,7 +1,7 @@
-package chapterOne;
 import java.util.Scanner;
 
 public class InputTypeChecker {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please input content:");

@@ -1,10 +1,9 @@
-package graphics;
+import graphics.DrawingPanel.java;
 import java.awt.*;
 
-import graphics.DrawingPanel.java;
-
 public class DrawingPanelRectangle {
-    public static void main (String[] args) {
+
+    public static void main(String[] args) {
         DrawingPanel panel = new DrawingPanel(500, 400);
         panel.setBackground(Color.CYAN);
         Graphics g = panel.getGraphics();

@@ -1,10 +1,9 @@
-package chapterSix;
 import java.io.*;
 import java.util.*;
 
 public class LineBasedProcessing {
-    public static void main (String[] args) throws FileNotFoundException {
 
+    public static void main(String[] args) throws FileNotFoundException {
         //Add Movie File and Scanner
         File movieFile = new File("chapterSix/imbd.txt");
         Scanner inputMovie = new Scanner(movieFile);
@@ -15,7 +14,7 @@ public class LineBasedProcessing {
         String userSearchMovie = console.nextLine();
 
         //Search Movie
-        String line = searchMovie(inputMovie, userSearchMovie); 
+        String line = searchMovie(inputMovie, userSearchMovie);
 
         //find all movies matching the search
         if (!line.equals("Movie not found")) {
@@ -34,17 +33,22 @@ public class LineBasedProcessing {
     }
 
     //The second call to searchMovie starts from where the first call left off (not from the beginning)
-    public static String searchMovie (Scanner inputMovieContents, String searchMovieContents) {
+    public static String searchMovie(
+        Scanner inputMovieContents,
+        String searchMovieContents
+    ) {
         while (inputMovieContents.hasNextLine()) {
             String line = inputMovieContents.nextLine();
-            if (line.toLowerCase().contains(searchMovieContents.toLowerCase())) {
+            if (
+                line.toLowerCase().contains(searchMovieContents.toLowerCase())
+            ) {
                 return line;
             }
         }
         return ("Movie not found");
     }
 
-    public static void printMovie (String movie) {
+    public static void printMovie(String movie) {
         Scanner data = new Scanner(movie);
         try {
             double rating = data.nextDouble();

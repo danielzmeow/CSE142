@@ -1,7 +1,7 @@
-package chapterOne;
 import java.util.Scanner;
 
 public class Compare {
+
     public static void main(String[] args) {
         Scanner content1 = new Scanner(System.in);
         System.out.println("Enter the first content: ");

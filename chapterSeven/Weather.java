@@ -1,7 +1,7 @@
-package chapterSeven;
 import java.util.*;
 
 public class Weather {
+
     public static void main(String[] args) {
         //get days of weather data
         Scanner input = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class Weather {
         //calculate and display average temperature
         double average = (double) sum / (double) temperatures.length;
         System.out.println("Average temperature: " + average);
-        
+
         //count and display number of days above average
         int count = 0;
         for (int i = 0; i < temperatures.length; i++) {

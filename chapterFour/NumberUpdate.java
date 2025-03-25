@@ -1,7 +1,7 @@
-package chapterFour;
 import java.util.Scanner;
 
 public class NumberUpdate {
+
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         System.out.print("Enter a number: ");
@@ -23,5 +23,3 @@ public class NumberUpdate {
         return n;
     }
 }
-    
-
