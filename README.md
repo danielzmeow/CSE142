@@ -9,7 +9,7 @@ I do hope one day, it can remind me of my **original intention** of my final dec
 
 ---
 
-**My lecture notes (English) below**. [**课堂笔记-中文（简体）**](LectureNotes_zh-CN.md)
+**My lecture notes (English) below**. [**课堂笔记-中文(简体)**](LectureNotes_zh-CN.md)
 
 # Lecture Notes
 
@@ -621,3 +621,21 @@ Several essential aspects to consider are:
 
 - You have the ability to override the behaviour defined in a superclass.
 - You can also inherit behaviors from a superclass.
+
+## Lecture 27
+
+`Static` means one shared by all instance of the class (belongs to class)
+
+### ArrayList
+
+```java
+ArrayList<String> list = new ArrayList<>();
+list.set(i, value);
+list.size();
+list.get(i);
+list.add(value);
+list.add(i, value);
+list.remove(i);
+list.clear();
+```
+
