@@ -26,6 +26,7 @@ public class ArrayListExample {
         numbers.add(12);
         minToMax(numbers);
         System.out.println("Sorted numbers: " + numbers);
+        System.out.println("Sorted? " + isSorted(numbers));
     }
 
     public static void minToMax(ArrayList<Integer> list){
@@ -38,5 +39,15 @@ public class ArrayListExample {
                 }
             }
         }
+    }
+
+    public static boolean isSorted(ArrayList<Integer> list) {
+        boolean isSorted = true;
+        for (int i = 0; i < list.size() - 1; i++) {
+            if (list.get(i) > list.get(i + 1)) {
+                isSorted = false;
+            }
+        }
+        return isSorted;
     }
 }

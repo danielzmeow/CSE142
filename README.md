@@ -638,4 +638,3 @@ list.add(i, value);
 list.remove(i);
 list.clear();
 ```
-
