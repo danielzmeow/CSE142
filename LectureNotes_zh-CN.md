@@ -569,3 +569,58 @@ public class Person {
     }
 }
 ```
+
+## 讲座25
+
+所有信息均通过代码传达，因此请参考提交信息和注释以获取详细信息。
+
+## 讲座26
+
+**继承** 是面向对象编程中的基本原则。层级结构（*is A*）在整个编程生命周期中起着至关重要的作用。继承的主要目的是有效地重用代码。
+
+> 法务秘书 **是某种类型的** 秘书，法务秘书 **是某种类型的** 文职员工，而文职员工 **是某种类型的** 员工。
+
+优选使用单一的通用库来统一管理所有数据，而不是为各种类别创建单独的副本。
+
+```java
+public class A (extend objects) {
+    public void methodOne () { Action1; }
+
+    public void methodTwo () { Action2; }
+    // A类作为超类
+}
+public class B extend A {
+    public void methodOne() { Action4; }
+    public void methodThree() { Action3; }
+    // B类是A类的子类
+}
+```
+
+| 类别 | methodOne | methodTwo | methodThree |
+| ----- | --------- | --------- | ----------- |
+| A     | Action1   | Action2   | N/A         |
+| B     | Action4   | Action2   | Action3     |
+
+上表展示了方法的重写和继承。
+
+需要考虑的几个重要方面是：
+
+- 您可以重写在超类中定义的行为。
+- 您还可以继承来自超类的行为。
+
+## 讲座27
+
+`Static`意味着类的所有实例共享一个（属于类）
+
+### ArrayList
+
+```java
+ArrayList<String> list = new ArrayList<>();
+list.set(i, value);
+list.size();
+list.get(i);
+list.add(value);
+list.add(i, value);
+list.remove(i);
+list.clear();
+```
